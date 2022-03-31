@@ -5,6 +5,9 @@ public class PessoaFisica extends PessoaHeranca{//gcuf
 	private String rg;
 	private String profissao;
 	
+	public PessoaFisica() {
+		
+	}
 	public String getCpf() {//gcuf
 		return cpf;
 	}

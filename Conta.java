@@ -4,8 +4,8 @@ public class Conta {
 
 	private int agencia;
 	private int numeroConta;
-	private double saldo;
-	private String titular;
+	protected double saldo;
+	private PessoaHeranca titular;
 	
 	
 	//construtores
@@ -14,7 +14,7 @@ public class Conta {
 		
 	}
 	
-	public Conta(int agencia, int numeroConta, String titular) {//metodo construtor com sobrecarga
+	public Conta(int agencia, int numeroConta, PessoaHeranca titular) {//metodo construtor com sobrecarga
 		super();
 		this.agencia = agencia;
 		this.numeroConta = numeroConta;
@@ -76,11 +76,11 @@ public class Conta {
 //		this.saldo = saldo;
 //	}
 
-	public String getTitular() {
+	public PessoaHeranca getTitular() {
 		return titular;
 	}
 
-	public void setTitular(String titular) {
+	public void setTitular(PessoaHeranca titular) {
 		this.titular = titular;
 	}
 	
